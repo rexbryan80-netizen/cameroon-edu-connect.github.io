@@ -1,44 +1,1183 @@
-
-<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Welcome to Cameroon Edu Connect</title>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Cameroon Education Connect
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+ </head>
+ <body class="bg-gray-50 min-h-screen flex flex-col">
+  <header class="bg-white shadow fixed w-full z-30 top-0">
+   <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+    <div class="flex items-center space-x-3">
+     <img alt="Logo of Cameroon Education Connect, a stylized book and graduation cap in blue and green" class="w-12 h-12" height="48" src="https://storage.googleapis.com/a1aa/image/7ec76672-0a7a-4caa-b4cf-dc94a6fc4259.jpg" width="48"/>
+     <h1 class="text-2xl font-semibold text-blue-700">
+      Cameroon Education Connect
+     </h1>
+    </div>
+    <nav class="space-x-6 hidden md:flex text-gray-700 font-medium">
+     <a class="hover:text-blue-600 transition" href="#institutes">
+      Institutes
+     </a>
+     <a class="hover:text-blue-600 transition" href="#experts">
+      Experts
+     </a>
+     <a class="hover:text-blue-600 transition" href="#students">
+      Students
+     </a>
+     <a class="hover:text-blue-600 transition" href="#signin">
+      Sign In
+     </a>
+     <a class="hover:text-blue-600 transition" href="#login">
+      Log In
+     </a>
+    </nav>
+    <button aria-label="Toggle menu" class="md:hidden text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-600" id="menu-btn">
+     <i class="fas fa-bars fa-lg">
+     </i>
+    </button>
+   </div>
+   <nav aria-label="Mobile menu" class="hidden md:hidden bg-white border-t border-gray-200" id="mobile-menu">
+    <a class="block px-6 py-3 text-gray-700 hover:bg-blue-50" href="#institutes">
+     Institutes
+    </a>
+    <a class="block px-6 py-3 text-gray-700 hover:bg-blue-50" href="#experts">
+     Experts
+    </a>
+    <a class="block px-6 py-3 text-gray-700 hover:bg-blue-50" href="#students">
+     Students
+    </a>
+    <a class="block px-6 py-3 text-gray-700 hover:bg-blue-50" href="#signin">
+     Sign In
+    </a>
+    <a class="block px-6 py-3 text-gray-700 hover:bg-blue-50" href="#login">
+     Log In
+    </a>
+   </nav>
+  </header>
+  <main class="flex-grow container mx-auto px-6 py-28" id="main-content">
+   <section class="text-center max-w-3xl mx-auto mb-16">
+    <h2 class="text-4xl font-extrabold text-blue-700 mb-4">
+     Connecting Cameroon's Private Institutes, Experts, and Students
+    </h2>
+    <p class="text-gray-700 text-lg">
+     Helping secondary students make informed decisions about their future education and career paths after advanced level studies.
+    </p>
+    <img alt="A group of diverse secondary students consulting with an expert advisor in a modern classroom setting in Cameroon" class="mx-auto mt-8 rounded-lg shadow-lg" height="300" src="https://storage.googleapis.com/a1aa/image/96562cf5-ac14-4fd1-aa4e-3be06605c278.jpg" width="600"/>
+   </section>
+   <section class="mb-20" id="institutes">
+    <h3 class="text-3xl font-semibold text-blue-700 mb-8 text-center">
+     Private Institutes in Cameroon
+    </h3>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+     <article class="bg-white rounded-lg shadow p-6 flex flex-col">
+      <img alt="Front view of a modern private educational institute building in Douala, Cameroon with students entering" class="rounded-md mb-4 object-cover h-48 w-full" height="250" src="https://storage.googleapis.com/a1aa/image/052366ab-fc0a-488e-4591-300bbafb9723.jpg" width="400"/>
+      <h4 class="text-xl font-semibold text-blue-800 mb-2">
+       Elite Academy Douala
+      </h4>
+      <p class="text-gray-600 flex-grow">
+       A leading private institute offering advanced level courses in science and arts with expert guidance.
+      </p>
+      <a class="mt-4 inline-block text-blue-600 hover:underline font-semibold" href="#">
+       Learn More
+      </a>
+     </article>
+     <article class="bg-white rounded-lg shadow p-6 flex flex-col">
+      <img alt="Campus view of a private institute in Yaoundé, Cameroon with students walking on pathways and green lawns" class="rounded-md mb-4 object-cover h-48 w-full" height="250" src="https://storage.googleapis.com/a1aa/image/1491dd0a-271e-43ed-6cb8-195a1cc6c72b.jpg" width="400"/>
+      <h4 class="text-xl font-semibold text-blue-800 mb-2">
+       Greenfield Institute Yaoundé
+      </h4>
+      <p class="text-gray-600 flex-grow">
+       Known for its excellent faculty and career counseling services for secondary students.
+      </p>
+      <a class="mt-4 inline-block text-blue-600 hover:underline font-semibold" href="#">
+       Learn More
+      </a>
+     </article>
+     <article class="bg-white rounded-lg shadow p-6 flex flex-col">
+      <img alt="Classroom interior of a private institute in Buea, Cameroon with students attentively listening to a teacher" class="rounded-md mb-4 object-cover h-48 w-full" height="250" src="https://storage.googleapis.com/a1aa/image/bf3f8169-91ee-491e-2ecb-b3683d7143d1.jpg" width="400"/>
+      <h4 class="text-xl font-semibold text-blue-800 mb-2">
+       Future Pathways Institute Buea
+      </h4>
+      <p class="text-gray-600 flex-grow">
+       Specializes in personalized academic advising and preparation for higher education in Cameroon.
+      </p>
+      <a class="mt-4 inline-block text-blue-600 hover:underline font-semibold" href="#">
+       Learn More
+      </a>
+     </article>
+     <article class="bg-white rounded-lg shadow p-6 flex flex-col">
+      <img alt="Library interior of a private institute in Bamenda, Cameroon with students studying and using laptops" class="rounded-md mb-4 object-cover h-48 w-full" height="250" src="https://storage.googleapis.com/a1aa/image/f509ba68-2858-4c33-71f2-1ef8783181e6.jpg" width="400"/>
+      <h4 class="text-xl font-semibold text-blue-800 mb-2">
+       Knowledge Hub Institute Bamenda
+      </h4>
+      <p class="text-gray-600 flex-grow">
+       Offers comprehensive resources and expert advice for students planning their higher education journey.
+      </p>
+      <a class="mt-4 inline-block text-blue-600 hover:underline font-semibold" href="#">
+       Learn More
+      </a>
+     </article>
+     <article class="bg-white rounded-lg shadow p-6 flex flex-col">
+      <img alt="Entrance of a private institute in Limbe, Cameroon with welcoming staff and banners about education guidance" class="rounded-md mb-4 object-cover h-48 w-full" height="250" src="https://storage.googleapis.com/a1aa/image/8daf98ac-c799-4632-3209-31d8a80cdddc.jpg" width="400"/>
+      <h4 class="text-xl font-semibold text-blue-800 mb-2">
+       Bright Future Academy Limbe
+      </h4>
+      <p class="text-gray-600 flex-grow">
+       Focused on career counseling and connecting students with top universities in Cameroon.
+      </p>
+      <a class="mt-4 inline-block text-blue-600 hover:underline font-semibold" href="#">
+       Learn More
+      </a>
+     </article>
+     <article class="bg-white rounded-lg shadow p-6 flex flex-col">
+      <img alt="Group of students outside a private institute in Garoua, Cameroon discussing future education plans" class="rounded-md mb-4 object-cover h-48 w-full" height="250" src="https://storage.googleapis.com/a1aa/image/d074bd98-497e-48da-a660-9619d17ac540.jpg" width="400"/>
+      <h4 class="text-xl font-semibold text-blue-800 mb-2">
+       Horizon Learning Center Garoua
+      </h4>
+      <p class="text-gray-600 flex-grow">
+       Provides expert advice and workshops to help students choose the right higher education path.
+      </p>
+      <a class="mt-4 inline-block text-blue-600 hover:underline font-semibold" href="#">
+       Learn More
+      </a>
+     </article>
+     <!-- Institutes in West Region -->
+     <article class="bg-white rounded-lg shadow p-6 flex flex-col">
+      <img alt="Front view of a private institute building in Bafoussam, West Region, Cameroon with students outside" class="rounded-md mb-4 object-cover h-48 w-full" height="250" src="https://storage.googleapis.com/a1aa/image/3e59566c-9522-4467-de19-cf4fb3c67601.jpg" width="400"/>
+      <h4 class="text-xl font-semibold text-blue-800 mb-2">
+       Bafoussam Excellence Institute
+      </h4>
+      <p class="text-gray-600 flex-grow">
+       Premier institute in West Region offering advanced level courses and career guidance.
+      </p>
+      <a class="mt-4 inline-block text-blue-600 hover:underline font-semibold" href="#">
+       Learn More
+      </a>
+     </article>
+     <!-- Institutes in Northwest Region -->
+     <article class="bg-white rounded-lg shadow p-6 flex flex-col">
+      <img alt="Exterior of a private educational institute in Bamenda, Northwest Region, Cameroon with students walking" class="rounded-md mb-4 object-cover h-48 w-full" height="250" src="https://storage.googleapis.com/a1aa/image/4326dfd1-3d72-4137-bcba-6bd29b8728fa.jpg" width="400"/>
+      <h4 class="text-xl font-semibold text-blue-800 mb-2">
+       Northwest Scholars Academy
+      </h4>
+      <p class="text-gray-600 flex-grow">
+       Dedicated to academic excellence and expert counseling in the Northwest Region.
+      </p>
+      <a class="mt-4 inline-block text-blue-600 hover:underline font-semibold" href="#">
+       Learn More
+      </a>
+     </article>
+     <!-- Institutes in Southwest Region -->
+     <article class="bg-white rounded-lg shadow p-6 flex flex-col">
+      <img alt="Modern private institute building in Limbe, Southwest Region, Cameroon with students entering" class="rounded-md mb-4 object-cover h-48 w-full" height="250" src="https://storage.googleapis.com/a1aa/image/1767c2a3-a23e-44bc-1a0d-9553734fd1b6.jpg" width="400"/>
+      <h4 class="text-xl font-semibold text-blue-800 mb-2">
+       Southwest Future Institute
+      </h4>
+      <p class="text-gray-600 flex-grow">
+       Offers tailored academic advising and preparation for higher education in Southwest Region.
+      </p>
+      <a class="mt-4 inline-block text-blue-600 hover:underline font-semibold" href="#">
+       Learn More
+      </a>
+     </article>
+     <!-- Afritech Institute in Dschang -->
+     <article class="bg-white rounded-lg shadow p-6 flex flex-col">
+      <img alt="Front view of Afritech Institute building in Dschang, West Region, Cameroon with modern architecture and students outside" class="rounded-md mb-4 object-cover h-48 w-full" height="250" src="91b3da1d-8552-49d9-a42a-e462bf722e75.png" width="400"/>
+      <h4 class="text-xl font-semibold text-blue-800 mb-2">
+       Afritech Institute Dschang
+      </h4>
+      <p class="text-gray-600 flex-grow">
+       A cutting-edge institute in Dschang offering advanced courses and expert guidance for future leaders.
+      </p>
+      <a class="mt-4 inline-block text-blue-600 hover:underline font-semibold" href="#">
+       Learn More
+      </a>
+     </article>
+    </div>
+   </section>
+   <section class="mb-20" id="experts">
+    <h3 class="text-3xl font-semibold text-blue-700 mb-8 text-center">
+     Our Expert Advisors
+    </h3>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+     <article class="bg-white rounded-lg shadow p-6 flex flex-col items-center text-center">
+      <img alt="Portrait of expert advisor, a middle-aged Cameroonian woman smiling, wearing professional attire" class="rounded-full mb-4 object-cover w-36 h-36" height="150" src="https://storage.googleapis.com/a1aa/image/f52d91db-ec43-43ff-ee18-13e85a8e57a4.jpg" width="150"/>
+      <h4 class="text-xl font-semibold text-blue-800 mb-1">
+       Dr. Amina Tchoumbou
+      </h4>
+      <p class="text-gray-600 mb-2">
+       Higher Education Specialist
+      </p>
+      <p class="text-gray-600 mb-4">
+       Over 15 years of experience advising students on university programs and career paths in Cameroon.
+      </p>
+      <a class="text-blue-600 hover:underline font-semibold" href="#login">
+       Expert Login
+      </a>
+     </article>
+     <article class="bg-white rounded-lg shadow p-6 flex flex-col items-center text-center">
+      <img alt="Portrait of expert advisor, a young Cameroonian man with glasses, wearing a suit and tie" class="rounded-full mb-4 object-cover w-36 h-36" height="150" src="https://storage.googleapis.com/a1aa/image/c9f7dfb7-badc-4878-aca2-789ef84719e8.jpg" width="150"/>
+      <h4 class="text-xl font-semibold text-blue-800 mb-1">
+       Mr. Jean-Paul Nguimfack
+      </h4>
+      <p class="text-gray-600 mb-2">
+       Career Counselor
+      </p>
+      <p class="text-gray-600 mb-4">
+       Specializes in guiding students through vocational and academic options after advanced level.
+      </p>
+      <a class="text-blue-600 hover:underline font-semibold" href="#login">
+       Expert Login
+      </a>
+     </article>
+     <article class="bg-white rounded-lg shadow p-6 flex flex-col items-center text-center">
+      <img alt="Portrait of expert advisor, an experienced Cameroonian woman with short hair, wearing a blazer" class="rounded-full mb-4 object-cover w-36 h-36" height="150" src="https://storage.googleapis.com/a1aa/image/18ec9626-4e7a-4252-000d-058ec4861757.jpg" width="150"/>
+      <h4 class="text-xl font-semibold text-blue-800 mb-1">
+       Mrs. Esther Mbarga
+      </h4>
+      <p class="text-gray-600 mb-2">
+       Academic Advisor
+      </p>
+      <p class="text-gray-600 mb-4">
+       Provides personalized counseling to help students select the best higher education institutions.
+      </p>
+      <a class="text-blue-600 hover:underline font-semibold" href="#login">
+       Expert Login
+      </a>
+     </article>
+     <article class="bg-white rounded-lg shadow p-6 flex flex-col items-center text-center">
+      <img alt="Portrait of expert advisor, founder of Afritech Institute, a middle-aged Cameroonian man with glasses and a warm smile, wearing a smart casual shirt" class="rounded-full mb-4 object-cover w-36 h-36" height="150" src="7b7f7dd8-188f-4504-82d7-496fe7001f92.png" width="150"/>
+      <h4 class="text-xl font-semibold text-blue-800 mb-1">
+       Mr. Njofie Wilson
+      </h4>
+      <p class="text-gray-600 mb-2">
+       Founder &amp; Expert Advisor, Afritech Institute
+      </p>
+      <p class="text-gray-600 mb-4">
+       Visionary founder of Afritech Institute in Dschang, providing expert advice and leadership in education.
+      </p>
+      <a class="text-blue-600 hover:underline font-semibold" href="#login">
+       Expert Login
+      </a>
+     </article>
+    </div>
+   </section>
+   <section class="mb-20 max-w-3xl mx-auto" id="students">
+    <h3 class="text-3xl font-semibold text-blue-700 mb-8 text-center">
+     For Secondary Students
+    </h3>
+    <p class="text-gray-700 mb-6 text-center">
+     Sign up to get personalized advice from experts and discover the best private institutes and universities in Cameroon for your future studies.
+    </p>
+    <form action="#" aria-label="Student sign up form" class="bg-white rounded-lg shadow p-8 space-y-6" id="student-signup-form" method="POST">
+     <div>
+      <label class="block text-gray-700 font-semibold mb-2" for="student-name">
+       Full Name
+      </label>
+      <input class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-600" id="student-name" name="student-name" placeholder="Your full name" required="" type="text"/>
+     </div>
+     <div>
+      <label class="block text-gray-700 font-semibold mb-2" for="student-email">
+       Email Address
+      </label>
+      <input class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-600" id="student-email" name="student-email" placeholder="you@example.com" required="" type="email"/>
+     </div>
+     <div>
+      <label class="block text-gray-700 font-semibold mb-2" for="student-phone">
+       Phone Number
+      </label>
+      <input class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-600" id="student-phone" name="student-phone" placeholder="+237 6XX XXX XXX" type="tel"/>
+     </div>
+     <div>
+      <label class="block text-gray-700 font-semibold mb-2" for="student-location">
+       Location (City)
+      </label>
+      <input class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-600" id="student-location" name="student-location" placeholder="Douala, Yaoundé, etc." required="" type="text"/>
+     </div>
+     <div>
+      <label class="block text-gray-700 font-semibold mb-2" for="student-message">
+       Tell us about your interests or questions
+      </label>
+      <textarea class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-600" id="student-message" name="student-message" placeholder="What do you want to know or achieve?" rows="4"></textarea>
+     </div>
+     <button class="w-full bg-blue-700 text-white font-semibold py-3 rounded-md hover:bg-blue-800 transition" type="submit">
+      Sign Up as Student
+     </button>
+    </form>
+   </section>
+   <section class="mb-20 max-w-3xl mx-auto" id="signin">
+    <h3 class="text-3xl font-semibold text-blue-700 mb-8 text-center">
+     Sign In for Students
+    </h3>
+    <form action="#" aria-label="Student sign in form" class="bg-white rounded-lg shadow p-8 space-y-6" id="student-signin-form" method="POST">
+     <div>
+      <label class="block text-gray-700 font-semibold mb-2" for="signin-email">
+       Email Address
+      </label>
+      <input class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-600" id="signin-email" name="signin-email" placeholder="you@example.com" required="" type="email"/>
+     </div>
+     <div>
+      <label class="block text-gray-700 font-semibold mb-2" for="signin-password">
+       Password
+      </label>
+      <input class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-600" id="signin-password" name="signin-password" placeholder="********" required="" type="password"/>
+     </div>
+     <button class="w-full bg-blue-700 text-white font-semibold py-3 rounded-md hover:bg-blue-800 transition" type="submit">
+      Sign In
+     </button>
+    </form>
+   </section>
+   <section class="mb-20 max-w-3xl mx-auto" id="login">
+    <h3 class="text-3xl font-semibold text-blue-700 mb-8 text-center">
+     Log In for Experts and Admin
+    </h3>
+    <form action="#" aria-label="Expert and admin login form" class="bg-white rounded-lg shadow p-8 space-y-6" id="expert-admin-login-form" method="POST">
+     <div>
+      <label class="block text-gray-700 font-semibold mb-2" for="login-email">
+       Email Address
+      </label>
+      <input class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-600" id="login-email" name="login-email" placeholder="you@example.com" required="" type="email"/>
+     </div>
+     <div>
+      <label class="block text-gray-700 font-semibold mb-2" for="login-password">
+       Password
+      </label>
+      <input class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-600" id="login-password" name="login-password" placeholder="********" required="" type="password"/>
+     </div>
+     <div>
+      <label class="block text-gray-700 font-semibold mb-2" for="login-role">
+       Role
+      </label>
+      <select class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-600" id="login-role" name="login-role" required="">
+       <option disabled="" selected="" value="">
+        Select your role
+       </option>
+       <option value="expert">
+        Expert
+       </option>
+       <option value="admin">
+        Admin
+       </option>
+      </select>
+     </div>
+     <button class="w-full bg-blue-700 text-white font-semibold py-3 rounded-md hover:bg-blue-800 transition" type="submit">
+      Log In
+     </button>
+    </form>
+   </section>
+  </main>
   
-<style>
-  body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: linear-gradient(to right, #e0f7fa, #80deea);
-    background-attachment: fixed;
-    color: #333;
-  }
-  .container {
-    padding: 40px;
-    max-width: 900px;
-    margin: auto;
-    background: rgba(255, 255, 255, 0.9);
-    box-shadow: 0 0 15px rgba(0,0,0,0.1);
-    border-radius: 8px;
-    margin-top: 30px;
-  }
-</style>
-
-</head>
-<body>
-  
-<nav style="background:#003366;padding:15px;text-align:center;">
-  <a href="index.html" style="margin:10px;color:white;text-decoration:none;">Home</a>
-  <a href="about.html" style="margin:10px;color:white;text-decoration:none;">About</a>
-  <a href="programs.html" style="margin:10px;color:white;text-decoration:none;">Programs</a>
-  <a href="gallery.html" style="margin:10px;color:white;text-decoration:none;">Gallery</a>
-  <a href="contact.html" style="margin:10px;color:white;text-decoration:none;">Contact</a>
-</nav>
-
-  <div class="container">
-    <h1>Welcome to Cameroon Edu Connect</h1>
-    <p>This is the welcome to cameroon edu connect page of Cameroon Edu Connect.</p>
+<section class="mb-20 max-w-3xl mx-auto" id="donate">
+  <h3 class="text-3xl font-semibold text-blue-700 mb-8 text-center">
+    Support Our Mission
+  </h3>
+  <p class="text-gray-700 mb-6 text-center">
+    Help us improve education access and opportunities across Cameroon. Your donation goes directly to supporting students and institutions.
+  </p>
+  <div class="bg-white rounded-lg shadow p-8 space-y-6 text-center">
+    <h4 class="text-xl font-semibold text-blue-800">Donate via Mobile Money</h4>
+    <div class="space-y-4">
+      <p class="text-gray-700">
+        <strong>MTN MoMo:</strong> <span class="text-blue-700">+237 675 544 181</span>
+      </p>
+      <p class="text-gray-700">
+        <strong>Orange Money:</strong> <span class="text-orange-600">+237 689 422 906</span>
+      </p>
+    </div>
+    <p class="text-sm text-gray-500 mt-4">
+      Please include your name or email in the transaction description if you'd like a receipt.
+    </p>
   </div>
-</body>
+</section>
+<footer class="bg-white border-t border-gray-200 py-6 mt-auto">
+   <div class="container mx-auto px-6 text-center text-gray-600 text-sm">
+    © 2024 Cameroon Education Connect. All rights reserved.
+   </div>
+  </footer>
+  <!-- Admin Dashboard Modal -->
+  <div aria-hidden="true" aria-labelledby="admin-dashboard-title" aria-modal="true" class="fixed inset-0 bg-black bg-opacity-50 hidden justify-center items-center z-50" id="admin-dashboard-modal" role="dialog">
+   <div class="bg-white rounded-lg shadow-lg w-full max-w-6xl max-h-[90vh] overflow-y-auto p-6 relative">
+    <button aria-label="Close admin dashboard" class="absolute top-4 right-4 text-gray-600 hover:text-gray-900 focus:outline-none" id="admin-dashboard-close">
+     <i class="fas fa-times fa-lg">
+     </i>
+    </button>
+    <h2 class="text-3xl font-bold text-blue-700 mb-6" id="admin-dashboard-title">
+     Admin Dashboard
+    </h2>
+    <div class="flex flex-col md:flex-row gap-6">
+     <nav class="md:w-1/4 bg-blue-50 rounded-lg p-4 space-y-4 sticky top-6 h-fit">
+      <button class="w-full text-left px-3 py-2 rounded hover:bg-blue-100 font-semibold text-blue-700 admin-nav-btn active" data-tab="dashboard-overview">
+       <i class="fas fa-tachometer-alt mr-2">
+       </i>
+       Overview
+      </button>
+      <button class="w-full text-left px-3 py-2 rounded hover:bg-blue-100 font-semibold text-blue-700 admin-nav-btn" data-tab="manage-institutes">
+       <i class="fas fa-school mr-2">
+       </i>
+       Manage Institutes
+      </button>
+      <button class="w-full text-left px-3 py-2 rounded hover:bg-blue-100 font-semibold text-blue-700 admin-nav-btn" data-tab="manage-experts">
+       <i class="fas fa-user-tie mr-2">
+       </i>
+       Manage Experts
+      </button>
+      <button class="w-full text-left px-3 py-2 rounded hover:bg-blue-100 font-semibold text-blue-700 admin-nav-btn" data-tab="manage-students">
+       <i class="fas fa-user-graduate mr-2">
+       </i>
+       Manage Students
+      </button>
+      <button class="w-full text-left px-3 py-2 rounded hover:bg-blue-100 font-semibold text-blue-700 admin-nav-btn" data-tab="site-settings">
+       <i class="fas fa-cogs mr-2">
+       </i>
+       Site Settings
+      </button>
+     </nav>
+     <section class="md:w-3/4 bg-white rounded-lg p-6 shadow max-h-[75vh] overflow-y-auto" id="dashboard-content">
+      <!-- Overview Tab -->
+      <div class="admin-tab-content" data-tab-content="dashboard-overview">
+       <h3 class="text-2xl font-semibold mb-4 text-blue-700">
+        Dashboard Overview
+       </h3>
+       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-6">
+        <div class="bg-blue-100 rounded-lg p-4 text-center">
+         <p class="text-4xl font-bold text-blue-700" id="count-institutes">
+          0
+         </p>
+         <p class="text-blue-900 font-semibold mt-1">
+          Institutes
+         </p>
+        </div>
+        <div class="bg-green-100 rounded-lg p-4 text-center">
+         <p class="text-4xl font-bold text-green-700" id="count-experts">
+          0
+         </p>
+         <p class="text-green-900 font-semibold mt-1">
+          Experts
+         </p>
+        </div>
+        <div class="bg-yellow-100 rounded-lg p-4 text-center">
+         <p class="text-4xl font-bold text-yellow-700" id="count-students">
+          0
+         </p>
+         <p class="text-yellow-900 font-semibold mt-1">
+          Students
+         </p>
+        </div>
+        <div class="bg-red-100 rounded-lg p-4 text-center">
+         <p class="text-4xl font-bold text-red-700" id="count-queries">
+          0
+         </p>
+         <p class="text-red-900 font-semibold mt-1">
+          Student Queries
+         </p>
+        </div>
+       </div>
+       <div>
+        <h4 class="text-xl font-semibold mb-2">
+         Recent Student Queries
+        </h4>
+        <ul class="divide-y divide-gray-200 max-h-48 overflow-y-auto" id="recent-queries-list">
+         <li class="py-2">
+          <p class="font-semibold text-gray-800">
+           No queries yet.
+          </p>
+         </li>
+        </ul>
+       </div>
+      </div>
+      <!-- Manage Institutes Tab -->
+      <div class="admin-tab-content hidden" data-tab-content="manage-institutes">
+       <h3 class="text-2xl font-semibold mb-4 text-blue-700">
+        Manage Institutes
+       </h3>
+       <button class="mb-4 bg-blue-700 text-white px-4 py-2 rounded hover:bg-blue-800 transition" id="add-institute-btn">
+        <i class="fas fa-plus mr-2">
+        </i>
+        Add New Institute
+       </button>
+       <div class="overflow-x-auto">
+        <table class="min-w-full border border-gray-300 rounded-lg" id="institutes-table">
+         <thead class="bg-blue-100 text-blue-900 font-semibold">
+          <tr>
+           <th class="border border-gray-300 px-4 py-2 text-left">
+            Name
+           </th>
+           <th class="border border-gray-300 px-4 py-2 text-left">
+            Region
+           </th>
+           <th class="border border-gray-300 px-4 py-2 text-left">
+            Description
+           </th>
+           <th class="border border-gray-300 px-4 py-2 text-left">
+            Actions
+           </th>
+          </tr>
+         </thead>
+         <tbody class="bg-white" id="institutes-tbody">
+         </tbody>
+        </table>
+       </div>
+      </div>
+      <!-- Manage Experts Tab -->
+      <div class="admin-tab-content hidden" data-tab-content="manage-experts">
+       <h3 class="text-2xl font-semibold mb-4 text-blue-700">
+        Manage Experts
+       </h3>
+       <button class="mb-4 bg-blue-700 text-white px-4 py-2 rounded hover:bg-blue-800 transition" id="add-expert-btn">
+        <i class="fas fa-plus mr-2">
+        </i>
+        Add New Expert
+       </button>
+       <div class="overflow-x-auto">
+        <table class="min-w-full border border-gray-300 rounded-lg" id="experts-table">
+         <thead class="bg-blue-100 text-blue-900 font-semibold">
+          <tr>
+           <th class="border border-gray-300 px-4 py-2 text-left">
+            Name
+           </th>
+           <th class="border border-gray-300 px-4 py-2 text-left">
+            Specialization
+           </th>
+           <th class="border border-gray-300 px-4 py-2 text-left">
+            Description
+           </th>
+           <th class="border border-gray-300 px-4 py-2 text-left">
+            Actions
+           </th>
+          </tr>
+         </thead>
+         <tbody class="bg-white" id="experts-tbody">
+         </tbody>
+        </table>
+       </div>
+      </div>
+      <!-- Manage Students Tab -->
+      <div class="admin-tab-content hidden" data-tab-content="manage-students">
+       <h3 class="text-2xl font-semibold mb-4 text-blue-700">
+        Manage Students
+       </h3>
+       <div class="overflow-x-auto">
+        <table class="min-w-full border border-gray-300 rounded-lg" id="students-table">
+         <thead class="bg-blue-100 text-blue-900 font-semibold">
+          <tr>
+           <th class="border border-gray-300 px-4 py-2 text-left">
+            Name
+           </th>
+           <th class="border border-gray-300 px-4 py-2 text-left">
+            Email
+           </th>
+           <th class="border border-gray-300 px-4 py-2 text-left">
+            Phone
+           </th>
+           <th class="border border-gray-300 px-4 py-2 text-left">
+            Location
+           </th>
+           <th class="border border-gray-300 px-4 py-2 text-left">
+            Interests/Questions
+           </th>
+           <th class="border border-gray-300 px-4 py-2 text-left">
+            Actions
+           </th>
+          </tr>
+         </thead>
+         <tbody class="bg-white" id="students-tbody">
+         </tbody>
+        </table>
+       </div>
+      </div>
+      <!-- Site Settings Tab -->
+      <div class="admin-tab-content hidden" data-tab-content="site-settings">
+       <h3 class="text-2xl font-semibold mb-4 text-blue-700">
+        Site Settings
+       </h3>
+       <form class="space-y-6 max-w-lg" id="site-settings-form">
+        <div>
+         <label class="block font-semibold mb-2 text-gray-700" for="site-title-input">
+          Site Title
+         </label>
+         <input class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-600" id="site-title-input" type="text" value="Cameroon Education Connect"/>
+        </div>
+        <div>
+         <label class="block font-semibold mb-2 text-gray-700" for="site-description-input">
+          Site Description
+         </label>
+         <textarea class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-600" id="site-description-input" rows="3">Helping secondary students make informed decisions about their future education and career paths after advanced level studies.</textarea>
+        </div>
+        <button class="bg-blue-700 text-white px-4 py-2 rounded hover:bg-blue-800 transition" type="submit">
+         Save Settings
+        </button>
+       </form>
+      </div>
+     </section>
+    </div>
+   </div>
+  </div>
+  <!-- Add/Edit Institute Modal -->
+  <div aria-hidden="true" aria-labelledby="institute-modal-title" aria-modal="true" class="fixed inset-0 bg-black bg-opacity-50 hidden justify-center items-center z-50" id="institute-modal" role="dialog">
+   <div class="bg-white rounded-lg shadow-lg w-full max-w-lg p-6 relative">
+    <button aria-label="Close institute modal" class="absolute top-4 right-4 text-gray-600 hover:text-gray-900 focus:outline-none" id="institute-modal-close">
+     <i class="fas fa-times fa-lg">
+     </i>
+    </button>
+    <h3 class="text-2xl font-bold text-blue-700 mb-4" id="institute-modal-title">
+     Add New Institute
+    </h3>
+    <form class="space-y-4" id="institute-form">
+     <input id="institute-id" type="hidden"/>
+     <div>
+      <label class="block font-semibold mb-2 text-gray-700" for="institute-name">
+       Institute Name
+      </label>
+      <input class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-600" id="institute-name" name="institute-name" placeholder="Institute name" required="" type="text"/>
+     </div>
+     <div>
+      <label class="block font-semibold mb-2 text-gray-700" for="institute-region">
+       Region
+      </label>
+      <select class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-600" id="institute-region" name="institute-region" required="">
+       <option disabled="" selected="" value="">
+        Select region
+       </option>
+       <option value="Littoral">
+        Littoral
+       </option>
+       <option value="Centre">
+        Centre
+       </option>
+       <option value="Southwest">
+        Southwest
+       </option>
+       <option value="Northwest">
+        Northwest
+       </option>
+       <option value="West">
+        West
+       </option>
+       <option value="Other">
+        Other
+       </option>
+      </select>
+     </div>
+     <div>
+      <label class="block font-semibold mb-2 text-gray-700" for="institute-description">
+       Description
+      </label>
+      <textarea class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-600" id="institute-description" name="institute-description" placeholder="Brief description" required="" rows="3"></textarea>
+     </div>
+     <button class="bg-blue-700 text-white px-4 py-2 rounded hover:bg-blue-800 transition" type="submit">
+      Save Institute
+     </button>
+    </form>
+   </div>
+  </div>
+  <!-- Add/Edit Expert Modal -->
+  <div aria-hidden="true" aria-labelledby="expert-modal-title" aria-modal="true" class="fixed inset-0 bg-black bg-opacity-50 hidden justify-center items-center z-50" id="expert-modal" role="dialog">
+   <div class="bg-white rounded-lg shadow-lg w-full max-w-lg p-6 relative">
+    <button aria-label="Close expert modal" class="absolute top-4 right-4 text-gray-600 hover:text-gray-900 focus:outline-none" id="expert-modal-close">
+     <i class="fas fa-times fa-lg">
+     </i>
+    </button>
+    <h3 class="text-2xl font-bold text-blue-700 mb-4" id="expert-modal-title">
+     Add New Expert
+    </h3>
+    <form class="space-y-4" id="expert-form">
+     <input id="expert-id" type="hidden"/>
+     <div>
+      <label class="block font-semibold mb-2 text-gray-700" for="expert-name">
+       Expert Name
+      </label>
+      <input class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-600" id="expert-name" name="expert-name" placeholder="Expert full name" required="" type="text"/>
+     </div>
+     <div>
+      <label class="block font-semibold mb-2 text-gray-700" for="expert-specialization">
+       Specialization
+      </label>
+      <input class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-600" id="expert-specialization" name="expert-specialization" placeholder="e.g. Career Counselor" required="" type="text"/>
+     </div>
+     <div>
+      <label class="block font-semibold mb-2 text-gray-700" for="expert-description">
+       Description
+      </label>
+      <textarea class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-600" id="expert-description" name="expert-description" placeholder="Brief description" required="" rows="3"></textarea>
+     </div>
+     <button class="bg-blue-700 text-white px-4 py-2 rounded hover:bg-blue-800 transition" type="submit">
+      Save Expert
+     </button>
+    </form>
+   </div>
+  </div>
+  <script>
+   // Mobile menu toggle
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Admin login and dashboard logic
+    const expertAdminLoginForm = document.getElementById('expert-admin-login-form');
+    const adminDashboardModal = document.getElementById('admin-dashboard-modal');
+    const adminDashboardCloseBtn = document.getElementById('admin-dashboard-close');
+    const mainContent = document.getElementById('main-content');
+
+    // Admin credentials
+    const adminCredentials = {
+      username: 'rexbryan80@gmail.com',
+      password: 'Bongkishe12&'
+    };
+
+    // Data stores (simulate database)
+    let institutes = [
+      {id: 1, name: "Elite Academy Douala", region: "Littoral", description: "A leading private institute offering advanced level courses in science and arts with expert guidance."},
+      {id: 2, name: "Greenfield Institute Yaoundé", region: "Centre", description: "Known for its excellent faculty and career counseling services for secondary students."},
+      {id: 3, name: "Future Pathways Institute Buea", region: "Southwest", description: "Specializes in personalized academic advising and preparation for higher education in Cameroon."},
+      {id: 4, name: "Knowledge Hub Institute Bamenda", region: "Northwest", description: "Offers comprehensive resources and expert advice for students planning their higher education journey."},
+      {id: 5, name: "Bright Future Academy Limbe", region: "Southwest", description: "Focused on career counseling and connecting students with top universities in Cameroon."},
+      {id: 6, name: "Horizon Learning Center Garoua", region: "Other", description: "Provides expert advice and workshops to help students choose the right higher education path."},
+      {id: 7, name: "Bafoussam Excellence Institute", region: "West", description: "Premier institute in West Region offering advanced level courses and career guidance."},
+      {id: 8, name: "Northwest Scholars Academy", region: "Northwest", description: "Dedicated to academic excellence and expert counseling in the Northwest Region."},
+      {id: 9, name: "Southwest Future Institute", region: "Southwest", description: "Offers tailored academic advising and preparation for higher education in Southwest Region."},
+      {id: 10, name: "Afritech Institute Dschang", region: "West", description: "A cutting-edge institute in Dschang offering advanced courses and expert guidance for future leaders."}
+    ];
+
+    let experts = [
+      {id: 1, name: "Dr. Amina Tchoumbou", specialization: "Higher Education Specialist", description: "Over 15 years of experience advising students on university programs and career paths in Cameroon."},
+      {id: 2, name: "Mr. Jean-Paul Nguimfack", specialization: "Career Counselor", description: "Specializes in guiding students through vocational and academic options after advanced level."},
+      {id: 3, name: "Mrs. Esther Mbarga", specialization: "Academic Advisor", description: "Provides personalized counseling to help students select the best higher education institutions."},
+      {id: 4, name: "Mr. Njofie Wilson", specialization: "Founder & Expert Advisor, Afritech Institute", description: "Visionary founder of Afritech Institute in Dschang, providing expert advice and leadership in education."}
+    ];
+
+    let students = [];
+
+    let studentQueries = [];
+
+    // Elements for counts
+    const countInstitutesEl = document.getElementById('count-institutes');
+    const countExpertsEl = document.getElementById('count-experts');
+    const countStudentsEl = document.getElementById('count-students');
+    const countQueriesEl = document.getElementById('count-queries');
+    const recentQueriesList = document.getElementById('recent-queries-list');
+
+    // Tables bodies
+    const institutesTbody = document.getElementById('institutes-tbody');
+    const expertsTbody = document.getElementById('experts-tbody');
+    const studentsTbody = document.getElementById('students-tbody');
+
+    // Admin nav buttons and content
+    const adminNavBtns = document.querySelectorAll('.admin-nav-btn');
+    const adminTabContents = document.querySelectorAll('.admin-tab-content');
+
+    // Modals and forms
+    const instituteModal = document.getElementById('institute-modal');
+    const instituteModalClose = document.getElementById('institute-modal-close');
+    const instituteForm = document.getElementById('institute-form');
+    const instituteModalTitle = document.getElementById('institute-modal-title');
+    const instituteIdInput = document.getElementById('institute-id');
+    const instituteNameInput = document.getElementById('institute-name');
+    const instituteRegionInput = document.getElementById('institute-region');
+    const instituteDescriptionInput = document.getElementById('institute-description');
+    const addInstituteBtn = document.getElementById('add-institute-btn');
+
+    const expertModal = document.getElementById('expert-modal');
+    const expertModalClose = document.getElementById('expert-modal-close');
+    const expertForm = document.getElementById('expert-form');
+    const expertModalTitle = document.getElementById('expert-modal-title');
+    const expertIdInput = document.getElementById('expert-id');
+    const expertNameInput = document.getElementById('expert-name');
+    const expertSpecializationInput = document.getElementById('expert-specialization');
+    const expertDescriptionInput = document.getElementById('expert-description');
+    const addExpertBtn = document.getElementById('add-expert-btn');
+
+    // Utility functions
+    function renderCounts() {
+      countInstitutesEl.textContent = institutes.length;
+      countExpertsEl.textContent = experts.length;
+      countStudentsEl.textContent = students.length;
+      countQueriesEl.textContent = studentQueries.length;
+    }
+
+    function renderRecentQueries() {
+      recentQueriesList.innerHTML = '';
+      if (studentQueries.length === 0) {
+        const li = document.createElement('li');
+        li.className = 'py-2';
+        li.innerHTML = '<p class="font-semibold text-gray-800">No queries yet.</p>';
+        recentQueriesList.appendChild(li);
+        return;
+      }
+      studentQueries.slice(-5).reverse().forEach(q => {
+        const li = document.createElement('li');
+        li.className = 'py-2';
+        li.innerHTML = `<p class="font-semibold text-gray-800">${q.name} (${q.email})</p><p class="text-gray-700">${q.message}</p>`;
+        recentQueriesList.appendChild(li);
+      });
+    }
+
+    function renderInstitutesTable() {
+      institutesTbody.innerHTML = '';
+      if (institutes.length === 0) {
+        const tr = document.createElement('tr');
+        tr.innerHTML = '<td colspan="4" class="text-center py-4 text-gray-600">No institutes found.</td>';
+        institutesTbody.appendChild(tr);
+        return;
+      }
+      institutes.forEach(inst => {
+        const tr = document.createElement('tr');
+        tr.className = 'border-b border-gray-200 hover:bg-gray-50';
+        tr.innerHTML = `
+          <td class="border border-gray-300 px-4 py-2">${inst.name}</td>
+          <td class="border border-gray-300 px-4 py-2">${inst.region}</td>
+          <td class="border border-gray-300 px-4 py-2">${inst.description}</td>
+          <td class="border border-gray-300 px-4 py-2 whitespace-nowrap">
+            <button class="text-blue-600 hover:underline mr-3 institute-edit-btn" data-id="${inst.id}">Edit</button>
+            <button class="text-red-600 hover:underline institute-delete-btn" data-id="${inst.id}">Delete</button>
+          </td>
+        `;
+        institutesTbody.appendChild(tr);
+      });
+      // Add event listeners for edit and delete
+      document.querySelectorAll('.institute-edit-btn').forEach(btn => {
+        btn.addEventListener('click', e => {
+          const id = parseInt(e.target.dataset.id);
+          openInstituteModalForEdit(id);
+        });
+      });
+      document.querySelectorAll('.institute-delete-btn').forEach(btn => {
+        btn.addEventListener('click', e => {
+          const id = parseInt(e.target.dataset.id);
+          if (confirm('Are you sure you want to delete this institute?')) {
+            institutes = institutes.filter(i => i.id !== id);
+            renderInstitutesTable();
+            renderCounts();
+            alert('Institute deleted.');
+          }
+        });
+      });
+    }
+
+    function renderExpertsTable() {
+      expertsTbody.innerHTML = '';
+      if (experts.length === 0) {
+        const tr = document.createElement('tr');
+        tr.innerHTML = '<td colspan="4" class="text-center py-4 text-gray-600">No experts found.</td>';
+        expertsTbody.appendChild(tr);
+        return;
+      }
+      experts.forEach(exp => {
+        const tr = document.createElement('tr');
+        tr.className = 'border-b border-gray-200 hover:bg-gray-50';
+        tr.innerHTML = `
+          <td class="border border-gray-300 px-4 py-2">${exp.name}</td>
+          <td class="border border-gray-300 px-4 py-2">${exp.specialization}</td>
+          <td class="border border-gray-300 px-4 py-2">${exp.description}</td>
+          <td class="border border-gray-300 px-4 py-2 whitespace-nowrap">
+            <button class="text-blue-600 hover:underline mr-3 expert-edit-btn" data-id="${exp.id}">Edit</button>
+            <button class="text-red-600 hover:underline expert-delete-btn" data-id="${exp.id}">Delete</button>
+          </td>
+        `;
+        expertsTbody.appendChild(tr);
+      });
+      // Add event listeners for edit and delete
+      document.querySelectorAll('.expert-edit-btn').forEach(btn => {
+        btn.addEventListener('click', e => {
+          const id = parseInt(e.target.dataset.id);
+          openExpertModalForEdit(id);
+        });
+      });
+      document.querySelectorAll('.expert-delete-btn').forEach(btn => {
+        btn.addEventListener('click', e => {
+          const id = parseInt(e.target.dataset.id);
+          if (confirm('Are you sure you want to delete this expert?')) {
+            experts = experts.filter(i => i.id !== id);
+            renderExpertsTable();
+            renderCounts();
+            alert('Expert deleted.');
+          }
+        });
+      });
+    }
+
+    function renderStudentsTable() {
+      studentsTbody.innerHTML = '';
+      if (students.length === 0) {
+        const tr = document.createElement('tr');
+        tr.innerHTML = '<td colspan="6" class="text-center py-4 text-gray-600">No students found.</td>';
+        studentsTbody.appendChild(tr);
+        return;
+      }
+      students.forEach(stu => {
+        const tr = document.createElement('tr');
+        tr.className = 'border-b border-gray-200 hover:bg-gray-50';
+        tr.innerHTML = `
+          <td class="border border-gray-300 px-4 py-2">${stu.name}</td>
+          <td class="border border-gray-300 px-4 py-2">${stu.email}</td>
+          <td class="border border-gray-300 px-4 py-2">${stu.phone || '-'}</td>
+          <td class="border border-gray-300 px-4 py-2">${stu.location}</td>
+          <td class="border border-gray-300 px-4 py-2">${stu.message || '-'}</td>
+          <td class="border border-gray-300 px-4 py-2 whitespace-nowrap">
+            <button class="text-red-600 hover:underline student-delete-btn" data-email="${stu.email}">Delete</button>
+          </td>
+        `;
+        studentsTbody.appendChild(tr);
+      });
+      // Add event listeners for delete
+      document.querySelectorAll('.student-delete-btn').forEach(btn => {
+        btn.addEventListener('click', e => {
+          const email = e.target.dataset.email;
+          if (confirm('Are you sure you want to delete this student?')) {
+            students = students.filter(s => s.email !== email);
+            renderStudentsTable();
+            renderCounts();
+            alert('Student deleted.');
+          }
+        });
+      });
+    }
+
+    // Open modals for add/edit
+    function openInstituteModalForAdd() {
+      instituteModalTitle.textContent = 'Add New Institute';
+      instituteIdInput.value = '';
+      instituteNameInput.value = '';
+      instituteRegionInput.value = '';
+      instituteDescriptionInput.value = '';
+      instituteModal.classList.remove('hidden');
+    }
+
+    function openInstituteModalForEdit(id) {
+      const inst = institutes.find(i => i.id === id);
+      if (!inst) return;
+      instituteModalTitle.textContent = 'Edit Institute';
+      instituteIdInput.value = inst.id;
+      instituteNameInput.value = inst.name;
+      instituteRegionInput.value = inst.region;
+      instituteDescriptionInput.value = inst.description;
+      instituteModal.classList.remove('hidden');
+    }
+
+    function openExpertModalForAdd() {
+      expertModalTitle.textContent = 'Add New Expert';
+      expertIdInput.value = '';
+      expertNameInput.value = '';
+      expertSpecializationInput.value = '';
+      expertDescriptionInput.value = '';
+      expertModal.classList.remove('hidden');
+    }
+
+    function openExpertModalForEdit(id) {
+      const exp = experts.find(e => e.id === id);
+      if (!exp) return;
+      expertModalTitle.textContent = 'Edit Expert';
+      expertIdInput.value = exp.id;
+      expertNameInput.value = exp.name;
+      expertSpecializationInput.value = exp.specialization;
+      expertDescriptionInput.value = exp.description;
+      expertModal.classList.remove('hidden');
+    }
+
+    // Close modals
+    instituteModalClose.addEventListener('click', () => {
+      instituteModal.classList.add('hidden');
+    });
+    expertModalClose.addEventListener('click', () => {
+      expertModal.classList.add('hidden');
+    });
+    adminDashboardCloseBtn.addEventListener('click', () => {
+      adminDashboardModal.classList.add('hidden');
+      mainContent.classList.remove('hidden');
+      expertAdminLoginForm.reset();
+    });
+
+    // Handle admin nav tab switching
+    adminNavBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        adminNavBtns.forEach(b => b.classList.remove('active', 'bg-blue-100'));
+        btn.classList.add('active', 'bg-blue-100');
+        const tab = btn.dataset.tab;
+        adminTabContents.forEach(content => {
+          if (content.dataset.tabContent === tab) {
+            content.classList.remove('hidden');
+          } else {
+            content.classList.add('hidden');
+          }
+        });
+      });
+    });
+
+    // Handle institute form submit
+    instituteForm.addEventListener('submit', e => {
+      e.preventDefault();
+      const idVal = instituteIdInput.value.trim();
+      const nameVal = instituteNameInput.value.trim();
+      const regionVal = instituteRegionInput.value;
+      const descVal = instituteDescriptionInput.value.trim();
+      if (!nameVal || !regionVal || !descVal) {
+        alert('Please fill all required fields.');
+        return;
+      }
+      if (idVal) {
+        // Edit existing
+        const idx = institutes.findIndex(i => i.id === parseInt(idVal));
+        if (idx !== -1) {
+          institutes[idx].name = nameVal;
+          institutes[idx].region = regionVal;
+          institutes[idx].description = descVal;
+          alert('Institute updated.');
+        }
+      } else {
+        // Add new
+        const newId = institutes.length > 0 ? Math.max(...institutes.map(i => i.id)) + 1 : 1;
+        institutes.push({id: newId, name: nameVal, region: regionVal, description: descVal});
+        alert('Institute added.');
+      }
+      renderInstitutesTable();
+      renderCounts();
+      instituteModal.classList.add('hidden');
+    });
+
+    // Handle expert form submit
+    expertForm.addEventListener('submit', e => {
+      e.preventDefault();
+      const idVal = expertIdInput.value.trim();
+      const nameVal = expertNameInput.value.trim();
+      const specVal = expertSpecializationInput.value.trim();
+      const descVal = expertDescriptionInput.value.trim();
+      if (!nameVal || !specVal || !descVal) {
+        alert('Please fill all required fields.');
+        return;
+      }
+      if (idVal) {
+        // Edit existing
+        const idx = experts.findIndex(e => e.id === parseInt(idVal));
+        if (idx !== -1) {
+          experts[idx].name = nameVal;
+          experts[idx].specialization = specVal;
+          experts[idx].description = descVal;
+          alert('Expert updated.');
+        }
+      } else {
+        // Add new
+        const newId = experts.length > 0 ? Math.max(...experts.map(e => e.id)) + 1 : 1;
+        experts.push({id: newId, name: nameVal, specialization: specVal, description: descVal});
+        alert('Expert added.');
+      }
+      renderExpertsTable();
+      renderCounts();
+      expertModal.classList.add('hidden');
+    });
+
+    // Add new buttons
+    addInstituteBtn.addEventListener('click', openInstituteModalForAdd);
+    addExpertBtn.addEventListener('click', openExpertModalForAdd);
+
+    // Handle expert/admin login form submit
+    expertAdminLoginForm.addEventListener('submit', e => {
+      e.preventDefault();
+      const email = expertAdminLoginForm['login-email'].value.trim().toLowerCase();
+      const password = expertAdminLoginForm['login-password'].value;
+      const role = expertAdminLoginForm['login-role'].value;
+
+      if (role === 'admin') {
+        // For admin, check username and password (username is email field here)
+        if (email === adminCredentials.username && password === adminCredentials.password) {
+          alert('Admin login successful.');
+          mainContent.classList.add('hidden');
+          adminDashboardModal.classList.remove('hidden');
+          renderCounts();
+          renderRecentQueries();
+          renderInstitutesTable();
+          renderExpertsTable();
+          renderStudentsTable();
+        } else {
+          alert('Invalid admin credentials.');
+        }
+      } else if (role === 'expert') {
+        // For experts, check if email exists in experts list (simulate)
+        const foundExpert = experts.find(e => e.name.toLowerCase().includes(email.split('@')[0]));
+        if (foundExpert) {
+          alert('Expert login successful. (Note: This is a demo, no dashboard for experts.)');
+          expertAdminLoginForm.reset();
+        } else {
+          alert('Expert not found or invalid credentials.');
+        }
+      } else {
+        alert('Please select a valid role.');
+      }
+    });
+
+    // Handle student sign up form submit
+    const studentSignupForm = document.getElementById('student-signup-form');
+    studentSignupForm.addEventListener('submit', e => {
+      e.preventDefault();
+      const name = studentSignupForm['student-name'].value.trim();
+      const email = studentSignupForm['student-email'].value.trim().toLowerCase();
+      const phone = studentSignupForm['student-phone'].value.trim();
+      const location = studentSignupForm['student-location'].value.trim();
+      const message = studentSignupForm['student-message'].value.trim();
+
+      if (!name || !email || !location) {
+        alert('Please fill all required fields.');
+        return;
+      }
+      // Check if email already registered
+      if (students.find(s => s.email === email)) {
+        alert('This email is already registered.');
+        return;
+      }
+      students.push({name, email, phone, location, message});
+      studentQueries.push({name, email, message});
+      alert('Student signed up successfully.');
+      studentSignupForm.reset();
+      renderCounts();
+      renderRecentQueries();
+    });
+
+    // Handle student sign in form submit (demo only)
+    const studentSigninForm = document.getElementById('student-signin-form');
+    studentSigninForm.addEventListener('submit', e => {
+      e.preventDefault();
+      const email = studentSigninForm['signin-email'].value.trim().toLowerCase();
+      const password = studentSigninForm['signin-password'].value;
+      // Demo: just check if email exists in students list
+      if (students.find(s => s.email === email)) {
+        alert('Student login successful. (Note: This is a demo, no dashboard for students.)');
+        studentSigninForm.reset();
+      } else {
+        alert('Student not found or invalid credentials.');
+      }
+    });
+
+    // Site settings form (demo only)
+    const siteSettingsForm = document.getElementById('site-settings-form');
+    siteSettingsForm.addEventListener('submit', e => {
+      e.preventDefault();
+      const title = siteSettingsForm['site-title-input'].value.trim();
+      const description = siteSettingsForm['site-description-input'].value.trim();
+      if (!title || !description) {
+        alert('Please fill all fields.');
+        return;
+      }
+      document.title = title;
+      alert('Site settings saved. (Note: This demo does not persist settings.)');
+    });
+
+    // Initialize counts and tables on page load
+    renderCounts();
+    renderRecentQueries();
+    renderInstitutesTable();
+    renderExpertsTable();
+    renderStudentsTable();
+  </script>
+ </body>
 </html>
